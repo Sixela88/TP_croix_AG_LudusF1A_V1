@@ -1,5 +1,5 @@
 ALGO : croix
-
+// Algo Croix
 // BUT : Afficher une croix dessine par un caractere demande par l'utilisateur et d'une taille defini par l'utilisateur
 // ENTREE : un caractere et un nombre pour la taille
 // SORTIE : caractere dispose pour faire une croix
