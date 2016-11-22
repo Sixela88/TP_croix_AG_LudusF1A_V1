@@ -1,0 +1,30 @@
+ALGO : croix
+
+// BUT : Afficher une croix dessine par un caractere demande par l'utilisateur et d'une taille defini par l'utilisateur
+// ENTREE : un caractere et un nombre pour la taille
+// SORTIE : caractere dispose pour faire une croix
+
+VAR :
+	car : CARACTERE
+	taille,x,y : ENTIER
+
+DEBUT
+	ECRIRE "Ecrire une lettre"
+	LIRE car
+	ECRIRE "Ecrire un nombre pour definir la taille de la croix"
+	LIRE taille
+	x<-1
+	y<-1
+	POUR x DE 1 A taille
+	FAIRE
+		POUR y DE 1 A taille 
+		FAIRE		
+			SI (x=y) OU (y=(taille-x+1)) ALORS
+					ECRIRE car    //Ne passe pas de ligne
+				SINON
+					ECRIRE " "    //Ne passe pas de ligne
+			FINSI
+		FINPOUR
+		ECRIRE ""    //Passe une ligne
+	FINPOUR
+FIN
